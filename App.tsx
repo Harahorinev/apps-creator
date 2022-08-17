@@ -1,3 +1,5 @@
+import 'react-native-gesture-handler';
+
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -14,14 +16,12 @@ import {
   StyleSheet,
   Text,
 } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import RootNavigator from './navigation';
 
 const App = () => {
-
-
   return (
-    <SafeAreaView>
-      <Text>123</Text>
-    </SafeAreaView>
+      <RootNavigator/>
   );
 };
 
